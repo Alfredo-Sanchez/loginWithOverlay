@@ -1,0 +1,54 @@
+body{
+    background: #eee;
+    margin: 0;
+}
+
+.form{
+    background: white;
+    width: 400px;
+    height: 240px;
+    margin: 3em auto;
+}
+
+.form__title{
+    text-align: center;
+    padding-top: .4em;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.form__field{
+    display:flex;
+    justify-content: center;
+}
+
+.form__input,
+.form__submit{
+    width: 90%;
+    height: 30px;
+    margin: 10px;
+}
+
+.form__submit{
+    background-color: lightgreen;
+    border: none;
+    color: #fff;
+    height: 35px;
+
+    position: relative;
+    z-index: 10;
+}
+
+.overlay.is-active{
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.form__input.is-active{
+    position: relative;
+    z-index: 10;
+}
